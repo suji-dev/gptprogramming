@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+  /* 이미지 파일의 실제 경로로 수정 */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #61dafb;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+
+        td a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        td a:hover {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .additional-info {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .additional-info h3 {
+            color: #000000;
+        }
+
+        .additional-info label {
+            color: #333;
+            font-weight: bold;
+            background-color: yellow;
+            display: inline-block;
+            width: 60px;
+        }
+
+        .additional-info input,
+        .additional-info textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .additional-info button {
+            background-color: #000;
+            color: #ff0;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .additional-info button:hover {
+            background-color: #333;
+        }
+
+
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; /* 애니메이션 적용 */
+}
+ 
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Skill Builder</h1>
+        <p>AI 기술을 활용한 자기개발 서비스</p>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <td onclick="disableClick('Python에 관한 학습 자료')">Python에 관한 학습 자료</td>
+                <td onclick="disableClick('Java에 관한 학습 자료')">Java에 관한 학습 자료</td>
+                <td onclick="disableClick('C++에 관한 학습 자료')">C++에 관한 학습 자료</td>
+            </tr>
+            <tr>
+                <td onclick="disableClick('자기소개서 작성법에 관한 학습 자료')">자기소개서 작성법에 관한 학습 자료</td>
+                <td onclick="disableClick('면접 5분 질의응답에 관한 학습 자료')">면접 5분 질의응답에 관한 학습 자료</td>
+                <td onclick="displayMessage()">디자인 기초</td>
+            </tr>
+            <tr>
+                <td onclick="displayMessage()">소묘법 기초</td>
+                <td onclick="displayMessage()">누구나 쉽게 코바늘</td>
+                <td onclick="displayMessage()">외발 자전거 타는법</td>
+            </tr>
+            <!-- 다른 항목들도 유사하게 추가 -->
+        </table>
+
+        <div class="additional-info">
+            <h3>이름과 포부 입력</h3>
+            <label for="name">이름:</label>
+            <input type="text" id="name" placeholder="이름을 입력하세요">
+
+            <label for="aspiration">포부:</label>
+            <textarea id="aspiration" placeholder="당신의 포부를 입력하세요"></textarea>
+
+            <button onclick="showAlertMessage()">확인</button>
+            <div id="datetime"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 dongyang Skill Builder | 20211880 김수지
+    </footer>
+
+    <script>
+        function redirectToSearch() {
+            window.location.href = 'search';
+        }
+
+        function showAlertMessage() {
+            var name = document.getElementById('name').value;
+            var aspiration = document.getElementById('aspiration').value;
+
+            if (name && aspiration) {
+                alert(name + '님, ' + aspiration + '한 포부를 담으셨군요. 응원합니다!');
+                redirectToSearch();
+            } else {
+                alert('이름과 포부를 모두 입력해주세요.');
+            }
+
+            var datetimeElement = document.getElementById('datetime');
+            var now = new Date();
+            var datetimeString = '현재 시간: ' + now.toLocaleTimeString() + ' / 날짜: ' + now.toLocaleDateString();
+            datetimeElement.textContent = datetimeString;
+        }
+
+        function disableClick(message) {
+            alert(message + "\n현재 공부 가능한 프로그램들입니다.");
+        }
+    </script>
+</body>
+
+</html>
+``

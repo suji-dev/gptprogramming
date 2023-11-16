@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 기존 head 내용 유지 -->
+
+    <!-- 추가된 부분: 퀴즈 스타일 -->
+    <link rel="stylesheet" href="../css/quiz-style.css">
+</head>
+<body>
+    <!-- 추가된 부분: 퀴즈 섹션 -->
+    <section>
+        <h2>Python 퀴즈</h2>
+        <form id="python-quiz-form">
+            <!-- 퀴즈 1 -->
+            <div class="quiz-question">
+                <p>1. 파이썬의 주요 용도는 무엇인가요?</p>
+                <label><input type="radio" name="q1" value="a"> 데이터베이스 관리</label>
+                <label><input type="radio" name="q1" value="b"> 인공지능 개발</label>
+                <label><input type="radio" name="q1" value="c"> 웹 개발</label>
+            </div>
+
+            <!-- 퀴즈 2 -->
+            <div class="quiz-question">
+                <p>2. Python에서 리스트에 값을 추가하는 메서드는?</p>
+                <label><input type="radio" name="q2" value="a"> add()</label>
+                <label><input type="radio" name="q2" value="b"> append()</label>
+                <label><input type="radio" name="q2" value="c"> insert()</label>
+            </div>
+
+            <!-- 퀴즈 3 -->
+            <div class="quiz-question">
+                <p>3. Python에서 조건문을 표현할 때 사용되는 키워드는?</p>
+                <label><input type="radio" name="q3" value="a"> then</label>
+                <label><input type="radio" name="q3" value="b"> switch</label>
+                <label><input type="radio" name="q3" value="c"> if</label>
+            </div>
+
+            <!-- 추가된 부분: 퀴즈 제출 버튼 -->
+            <input type="button" value="퀴즈 제출" onclick="submitPythonQuiz()">
+        </form>
+    </section>
+
+    <!-- 추가된 부분: 퀴즈 스크립트 -->
+    <script src="../js/quiz-script.js"></script>
+</body>
+</html>

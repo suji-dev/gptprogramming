@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Builder - 검색 결과</title>
+    <link rel="stylesheet" href="search-style.css">
+    <style>
+        /* 각 학습 자료에 대한 스타일 추가 */
+        a[data-skill="Python"]::before { content: '🐍 '; color: green; } /* Python 이모티콘과 초록색 */
+        a[data-skill="Java"]::before { content: '☕ '; color: orange; } /* Java 이모티콘과 주황색 */
+        a[data-skill="C++"]::before { content: '🔍 '; color: blue; } /* C++ 이모티콘과 파란색 */
+        a[data-skill="SelfIntroduction"]::before { content: '📝 '; color: purple; } /* 자기소개서 작성법 이모티콘과 보라색 */
+        a[data-skill="Interview"]::before { content: '🎙️ '; color: red; } /* 면접 5분 질의응답 이모티콘과 빨간색 */
+        
+        /* 나머지 스타일 추가 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        p:hover {
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Skill Builder</h1>
+        <p>AI 기술을 활용한 자기개발 서비스</p>
+    </header>
+
+<main>
+    <h2>검색 결과</h2>
+    <p><a href="#" onclick="startAI('Python')" data-skill="Python">Python에 관한 학습 자료</a></p>
+
+    <p><a href="#" onclick="startAI('Java')" data-skill="Java">Java에 관한 학습 자료</a></p>
+
+    <p><a href="#" onclick="startAI('C++')" data-skill="C++">C++에 관한 학습 자료</a></p>
+
+    <p><a href="#" onclick="startAI('SelfIntroduction')" data-skill="SelfIntroduction">자기소개서 작성법에 관한 학습 자료</a></p>
+    
+    <p><a href="#" onclick="startAI('Interview')" data-skill="Interview">면접 5분 질의응답에 관한 학습 자료</a></p>
+    <!-- 다른 항목들도 유사하게 추가 -->
+</main>
+
+
+    <footer>
+        &copy; 2023 Skill Builder
+    </footer>
+
+  <script>
+    function redirectToSearch() {
+        window.location.href = 'search.html';
+    }
+
+    function startAI(skill) {
+        // 여기에서 선택한 기술에 따라 다른 페이지로 리디렉션
+        var confirmation = confirm('AI 학습을 시작합니다. 선택한 기술: ' + skill + '\n진행하시겠습니까?');
+        if (confirmation) {
+            console.log('Redirecting to edu/' + skill.toLowerCase());
+            window.location.href = 'edu/' + skill.toLowerCase(); // edu 폴더 내의 skill으로 이동
+        }
+    }
+</script>
+
+</body>
+
+</html>

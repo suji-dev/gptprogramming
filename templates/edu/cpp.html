@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+        /* java-style.css의 내용을 여기에 추가 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5em;
+        }
+
+        div {
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        code {
+            color: #333;
+        }
+
+        /* 추가된 부분: 채팅 스타일 */
+        .chat-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .user-message {
+            background-color: #FF7F27;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .bot-message {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .user-message p, .bot-message p {
+            margin: 0;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ 학습 페이지</title>
+    <link rel="stylesheet" href="../css/cpp-style.css">
+</head>
+<body>
+    <header>
+        <h1>C++ 학습 페이지</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>C++ 소개</h2>
+            <p>C++은 다목적 프로그래밍 언어로, 시스템 프로그래밍, 게임 개발, 모바일 앱 등 다양한 분야에서 사용됩니다.</p>
+        </section>
+
+        <section>
+            <h2>C++이란?</h2>
+            <p>C++은 C 언어를 기반으로 한 객체지향 프로그래밍 언어입니다. 높은 성능과 풍부한 기능을 제공합니다.</p>
+        </section>
+
+        <section>
+            <h2>왜 C++을 선택해야 할까요?</h2>
+            <p>C++은 하드웨어 제어, 성능 최적화, 대규모 시스템 개발 등에 적합한 강력한 언어입니다.</p>
+        </section>
+
+        <section>
+            <h2>C++의 난이도</h2>
+            <p>C++은 다소 복잡한 언어이며, 입문자에게는 도전적일 수 있습니다. 그러나 그만큼 강력한 기능을 제공합니다.</p>
+        </section>
+
+        <section>
+            <h2>필요한 프로그램</h2>
+            <p>C++을 학습하려면 C++ 컴파일러와 통합 개발 환경(IDE)를 설치해야 합니다.</p>
+        </section>
+
+        <section>
+            <h2>20가지 C++ 정보</h2>
+            <ul>
+                <li>C++은 1979년 Bjarne Stroustrup에 의해 개발되었습니다.</li>
+                <li>C++은 C 언어를 기반으로 하며, 객체지향 프로그래밍 개념을 도입했습니다.</li>
+                <!-- 다른 정보들을 원하는 만큼 추가 -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>C++ 예제 (10개)</h2>
+            <div class="chat-container">
+                <!-- 예제 1 -->
+                <div class="user-message">
+                    <p>1. Hello World 출력하기</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;<br>    return 0;<br>}</code></p>
+                </div>
+
+                <!-- 예제 2 -->
+                <div class="user-message">
+                    <p>2. 변수 사용하기</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    string name = "Skill Builder";<br>    cout &lt;&lt; "안녕하세요, " &lt;&lt; name &lt;&lt; "!" &lt;&lt; endl;<br>    return 0;<br>}</code></p>
+                </div>
+
+                <section>
+    <h2>C++ 예제 (10개)</h2>
+    <div class="chat-container">
+        <!-- 예제 1 -->
+        <!-- (이전 예제 생략) -->
+
+        <!-- 예제 3 -->
+        <div class="user-message">
+            <p>3. 정수 연산</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    int a = 5;<br>    int b = 3;<br>    int result = a + b;<br>    cout &lt;&lt; "덧셈 결과: " &lt;&lt; result &lt;&lt; endl;<br>    return 0;<br>}</code></p>
+        </div>
+
+        <!-- 예제 4 -->
+        <div class="user-message">
+            <p>4. 조건문 활용</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    int age = 20;<br>    if (age >= 18) {<br>        cout &lt;&lt; "성인입니다." &lt;&lt; endl;<br>    } else {<br>        cout &lt;&lt; "미성년자입니다." &lt;&lt; endl;<br>    }<br>    return 0;<br>}</code></p>
+        </div>
+
+        <!-- 예제 5 -->
+        <div class="user-message">
+            <p>5. 반복문 활용</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    for (int i = 0; i < 5; ++i) {<br>        cout &lt;&lt; "반복 횟수: " &lt;&lt; i &lt;&lt; endl;<br>    }<br>    return 0;<br>}</code></p>
+        </div>
+
+        <!-- 예제 6 -->
+        <div class="user-message">
+            <p>6. 배열 사용</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    int numbers[] = {1, 2, 3, 4, 5};<br>    cout &lt;&lt; "배열 요소: " &lt;&lt; numbers[2] &lt;&lt; endl;<br>    return 0;<br>}</code></p>
+        </div>
+
+        <!-- 예제 7 -->
+        <div class="user-message">
+            <p>7. 함수 정의</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>void greet(string name) {<br>    cout &lt;&lt; "안녕하세요, " &lt;&lt; name &lt;&lt; "님!" &lt;&lt; endl;<br>}<br>int main() {<br>    greet("홍길동");<br>    return 0;<br>}</code></p>
+        </div>
+
+        <!-- 예제 8 -->
+        <div class="user-message">
+            <p>8. 클래스 정의</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>using namespace std;<br>class Circle {<br>public:<br>    double radius;<br>    double getArea() {<br>        return 3.14 * radius * radius;<br>    }<br>};<br>int main() {<br>    Circle myCircle;<br>    myCircle.radius = 5.0;<br>    cout &lt;&lt; "원의 넓이: " &lt;&lt; myCircle.getArea() &lt;&lt; endl;<br>    return 0;<br>}</code></p>
+        </div>
+
+        <!-- 예제 9 -->
+        <div class="user-message">
+            <p>9. 파일 입출력</p>
+        </div>
+        <div class="bot-message">
+            <p><code>#include &lt;iostream&gt;<br>#include &lt;fstream&gt;<br>using namespace std;<br>int main() {<br>    ofstream outputFile("example.txt");<br>    outputFile &lt;&lt; "파일에 쓰는 예제입니다." &lt;&lt; endl;<br>    outputFile.close();<br>    return 0;<br>}</code></p>
+        </div>
+    </div>
+</section>
+
+            </div>
+        </section>
+    </main>
+    <div id="disqus_thread"></div>
+
+ <script>
+        /**
+         * IMPORTANT: Replace EXAMPLE with your forum shortname!
+         */
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() {  // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://EXAMPLE.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- Disqus 코드 종료 -->
+
+    <footer>
+        &copy; 2023 Skill Builder
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* 추가된 스타일 */
+header h1 {
+    font-size: 2em; /* 텍스트 크기를 더 크게 조절 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 효과 추가 */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #61dafb;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+button {
+    background-color: #000; /* 버튼 색을 블랙으로 통일 */
+    color: #ff0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 추가된 스타일 */
+.additional-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.additional-info h3 {
+    color: #000000;
+
+}
+
+.additional-info label {
+    color: #333;
+    font-weight: bold; /* 글자 두껍게 설정 */
+    background-color: yellow; /* 배경 색 노란색으로 설정 */
+}
+
+.additional-info input,
+.additional-info textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.additional-info button {
+    background-color: #000;
+    color: #ff0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.additional-info button:hover {
+    background-color: #333;
+}

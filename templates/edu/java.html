@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 이전 내용 유지 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 학습 페이지</title>
+    <link rel="stylesheet" href="../css/java-style.css">
+    <style>
+        /* java-style.css의 내용을 여기에 추가 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5em;
+        }
+
+        div {
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        code {
+            color: #333;
+        }
+
+        /* 추가된 부분: 채팅 스타일 */
+        .chat-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .user-message {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .bot-message {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .user-message p, .bot-message p {
+            margin: 0;
+        }
+
+        /* 추가된 부분: 퀴즈 스타일 */
+        #quiz-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        #quiz-container h2 {
+            color: #007bff;
+        }
+
+        #quiz-container form {
+            margin-top: 20px;
+        }
+
+        #quiz-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #quiz-container input {
+            margin-right: 10px;
+        }
+
+        #quiz-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java 학습 페이지</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Java 예제 (10개)</h2>
+            <div class="chat-container">
+                <!-- 예제 1 -->
+                <div class="user-message">
+                    <p>1. Hello World 출력하기</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>public class HelloWorld {<br>    public static void main(String[] args) {<br>        System.out.println("Hello, World!");<br>    }<br>}</code></p>
+                </div>
+
+                <!-- 예제 2 -->
+                <div class="user-message">
+                    <p>2. 변수 사용하기</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>String name = "Skill Builder";<br>System.out.println("안녕하세요, " + name + "!");</code></p>
+                </div>
+
+                <!-- 추가된 예제 (3 ~ 9) -->
+                <!-- 예제 3 -->
+                <div class="user-message">
+                    <p>3. 정수 연산</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>int a = 5;<br>int b = 3;<br>int result = a + b;<br>System.out.println("덧셈 결과:" + result);</code></p>
+                </div>
+
+                <!-- 예제 4 -->
+                <div class="user-message">
+                    <p>4. 조건문 활용</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>int age = 20;<br>if (age >= 18) {<br>    System.out.println("성인입니다.");<br>} else {<br>    System.out.println("미성년자입니다.");<br>}</code></p>
+                </div>
+
+                <!-- 예제 5 -->
+                <div class="user-message">
+                    <p>5. 반복문 활용</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>for (int i = 0; i < 5; i++) {<br>    System.out.println("반복 횟수:" + i);<br>}</code></p>
+                </div>
+
+                <!-- 예제 6 -->
+                <div class="user-message">
+                    <p>6. 배열 활용</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>String[] fruits = {"사과", "바나나", "딸기"};<br>System.out.println("과일 목록:" + Arrays.toString(fruits));</code></p>
+                </div>
+
+                <!-- 예제 7 -->
+                <div class="user-message">
+                    <p>7. 메서드 정의</p>
+                </div>
+                <div class="bot-message">
+                    <p><code>public class Greet {<br>    static void greet(String name) {<br>        System.out.println("안녕하세요, " + name + "님!");<br>    }<br>    public static void main(String[] args) {<br>        greet("홍길동");<br>    }<br>}</code></p>
+                </div>
+            </div>
+       </section>
+
+        <section>
+            <h2>Java 퀴즈</h2>
+            <div id="quiz-container">
+                <form id="quiz-form" onsubmit="checkQuiz(event)">
+                    <label for="q1">1. Java의 창시자는 누구인가요?</label>
+                    <input type="text" id="q1" name="q1" required>
+
+                    <label for="q2">2. Java의 특징 중 하나는 무엇인가요?</label>
+                    <input type="text" id="q2" name="q2" required>
+
+                    <label for="q3">3. Java의 확장자는 무엇인가요?</label>
+                    <input type="text" id="q3" name="q3" required>
+
+                    <button type="submit">퀴즈 제출</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <!-- 이전 내용 유지 -->
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Skill Builder
+    </footer>
+
+    <script>
+        function checkQuiz(event) {
+            event.preventDefault();
+
+            const answers = {
+                q1: "제임스 고슬링",
+                q2: "객체 지향 프로그래밍",
+                q3: "java"
+            };
+
+            let score = 0;
+
+            for (const question in answers) {
+                const userAnswer = document.getElementById(question).value.trim().toLowerCase();
+                if (userAnswer === answers[question]) {
+                    score++;
+                }
+            }
+
+            alert(`퀴즈 완료! 정답 수: ${score}/3`);
+        }
+    </script>
+</body>
+</html>
